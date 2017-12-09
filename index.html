@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SADDORI</title>
+<link href="css/core.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<meta name="yandex-verification" content="f9cfe1c00003167a">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/main.js"></script>
+<style>@font-face{font-family:Pompadur;src:url(fonts/font.eot);src:local(pompadur),url(fonts/font.ttf);}h1{font-family:Pompadur,'Comic Sans MS',cursive;}</style>
+<script> 
+	document.onkeydown = function(e) { 
+	if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly. 
+	} 
+	return false; 
+	}; 
+	</script>
+	         <script> 
+            (function () { 
+            "use strict"; 
+            var videosSection = document.getElementById("backgroundsection"); 
+            var videosSectionClone = videosSection.cloneNode(); 
+            var videos = videosSection.getElementsByTagName("video"); 
+            var randomVideo = videos.item(Math.floor(Math.random() * videos.length)).cloneNode(true); 
+            randomVideo.removeAttribute("controls"); 
+            randomVideo.setAttribute("preload", "auto"); 
+            videosSectionClone.appendChild(randomVideo); 
+            videosSection.parentNode.replaceChild(videosSectionClone, videosSection); 
+            randomVideo.play(); 
+            })(); 
+         </script>
+            <div class="time">
+               <h id="doc_time">Time</h>
+            </div>
+            <header id="header">
+               <div class="inner">
+                  <div class="area">
+				  
+<script> 
+	function click() { 
+	if (event.button==2||event.button==3) { 
+	oncontextmenu='return false'; 
+	} 
+	} 
+	document.onmousedown=click 
+	document.oncontextmenu = new Function("return false;") 
+	</script>
+<script>
+	function disableWheelScroll(){
+	if (document.body.addEventListener) document.body.addEventListener('DOMMouseScroll', blockWheel, false);
+	document.body.onmousewheel = blockWheel;
+	}
+	function blockWheel(event){
+	if (!event) event = window.event;
+	if (event.stopPropagation) event.stopPropagation();
+	else event.cancelBubble = true;
+	if(event.preventDefault) event.preventDefault();
+	else event.returnValue = false;
+	}
+	disableWheelScroll();
+	</script>
+	
+</head>
+<body onmousedown="return false" onselectstart="return false">
+<style>body{overflow:hidden}</style>
+<script>disableWheelScroll();</script>
+<div id="star" class="video mask overlay">
+<i class="volume-button fa fa-volume-up"></i>
+<i class="stop-button fa fa-pause"></i>
+<div class="video-fallback"></div>
+<video id="video" autoplay loop>
+<source src="videos/video.mp4" type="video/mp4"/>
+Your browser does not support the video tag. I suggest you upgrade your browser.
+</video>
+<canvas class="cover"></canvas>
+</div>
+<div class="pageoverlay">
+<div class="lightbox">
+<div class="awrapper">
+<div class="titles fadeInDown">
+<h1><font color="Red">#</font>SADDORI<font color="Red"><3</font></h1>
+</div>
+<div class="media fadeInUp">
+<a href="https://vk.com/saddori" id="vk" title="Тот самый Саддори" target="_blank">
+<i class="fa fa-vk"></i>
+<a href="https://vk.com/id388751171" id="steam" title="Маленькое чудо" target="_blank">
+<i class="fa fa-heart"></i>
+</a>
+<a href="https://vk.com/hasoonmyr" id="steam" title="Топ братик" target="_blank">
+<i class="fa fa-user-circle-o"></i>
+</a>
+
+   <script language=javascript>
+      var rev = "fwd";
+      function titlebar(val){
+          var msg  = "SADDORI <3";
+          var res = " ";
+          var speed = 110;
+          var pos = val;
+          msg = "   ## "+msg+" ##";
+          var le = msg.length;
+          if(rev == "fwd"){
+              if(pos < le){
+                  pos = pos+1;
+                  scroll = msg.substr(0,pos);
+                  document.title = scroll;
+                  timer = window.setTimeout("titlebar("+pos+")",speed);
+              }
+              else {
+                  rev = "bwd";
+                  timer = window.setTimeout("titlebar("+pos+")",speed);
+              }
+          }
+          else {
+              if(pos > 0) {
+                  pos = pos-1;
+                  var ale = le-pos;
+                  scrol = msg.substr(ale,le);
+                  document.title = scrol;
+                  timer = window.setTimeout("titlebar("+pos+")",speed);
+              }
+              else {
+                  rev = "fwd";
+                  timer = window.setTimeout("titlebar("+pos+")",speed);
+              }
+          }
+      }
+      titlebar(0);
+   </script>
+
+  <script type="text/javascript">
+      function clock() {
+      var d = new Date();
+      var month_num = d.getMonth()
+      var day = d.getDate();
+      var hours = d.getHours();
+      var minutes = d.getMinutes();
+      var seconds = d.getSeconds();
+      
+      month=new Array("January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December");
+      
+      if (day <= 9) day = "0" + day;
+      if (hours <= 9) hours = "0" + hours;
+      if (minutes <= 9) minutes = "0" + minutes;
+      if (seconds <= 9) seconds = "0" + seconds;
+      
+      date_time = "Today - " + day + " " + month[month_num] + " " + d.getFullYear() +
+      " &nbsp;&nbsp;&nbsp;Current time - "+ hours + ":" + minutes + ":" + seconds;
+      if (document.layers) {
+       document.layers.doc_time.document.write(date_time);
+       document.layers.doc_time.document.close();
+      }
+      else document.getElementById("doc_time").innerHTML = date_time;
+       setTimeout("clock()", 1000);
+      }
+   </script>
+   <script type="text/javascript">
+      clock();
+   </script>
+   <script>
+      document.onkeydown = function(e) {
+          if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) { //Alt+c, Alt+v will also be disabled sadly. 
+          }
+          return false;
+      };
+   </script>
+   <script>
+      function click() {
+          if (event.button == 2 || event.button == 3) {
+              oncontextmenu = 'return false';
+          }
+      }
+      document.onmousedown = click
+      document.oncontextmenu = new Function("return false;")
+   </script>
+   
+</html>
